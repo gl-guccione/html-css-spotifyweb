@@ -10,7 +10,7 @@ GENERAL
 }
 
 section {
-  margin: 30px 10px 0;
+  margin: 20px 10px 0;
 }
 
 a {
@@ -320,6 +320,17 @@ MAIN-CONTENT
   border-bottom: 2px solid #adff2f;
 }
 
+/* custom, popular */
+#custom p,
+#popular p {
+  font-size: 12px;
+  margin: 8px 0 10px;
+}
+
+#popular img,
+#popular .overlay-img {
+  border-radius: 50%;
+}
 /*
 FOOTER
 */
