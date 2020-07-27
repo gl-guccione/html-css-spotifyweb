@@ -9,6 +9,10 @@ GENERAL
   font-family: 'Lato', sans-serif;
 }
 
+section {
+  margin: 30px 10px 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -32,6 +36,9 @@ TYPO
 
 .text-right {
   text-align: right;
+}
+.text-center {
+  text-align: center;
 }
 
 .list-white a {
@@ -71,6 +78,65 @@ ELEMENTS
   margin-right: 10px;
 
   border-radius: 50%;
+}
+
+
+.list-cover {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.list-cover li {
+  position: relative;
+
+  width: calc((100% / 2) - 10px);
+  margin: 20px 10px 10px 0;
+
+  cursor: pointer;
+}
+@media screen and (min-width: 992px) {
+  .list-cover li {
+    width: calc((100% / 4) - 10px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list-cover li {
+    width: calc((100% / 6) - 10px);
+  }
+}
+.list-cover img {
+  width: 100%;
+}
+.list-cover h3 {
+  margin: 15px 0 5px;
+
+  font-size: 18px;
+}
+.list-cover span {
+  font-size: 12px;
+  font-weight: 600;
+}
+.list-cover li:hover .overlay-img {
+  display: block;
+}
+.list-cover .overlay-img {
+  position: absolute;
+
+  display: none;
+
+  width: 100%;
+  padding-top: 100%;
+
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.overlay-img i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  font-size: 54px;
 }
 /*
 MAIN
@@ -203,6 +269,7 @@ MAIN-CONTENT
 /* cta */
 #cta-fixed-top {
   position: fixed;
+  z-index: 2;
   top: 0;
   right: 0px;
 
@@ -213,7 +280,7 @@ MAIN-CONTENT
   width: calc(100% - 250px);
   height: 70px;
 
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 #cta-fixed-top + * {
   margin-top: 80px;
@@ -224,21 +291,23 @@ MAIN-CONTENT
   }
 }
 
-#select-type ul {
+#select-musictype ul {
   display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
   justify-content: center;
 }
-#select-type li {
-  margin: 0 10px;
+#select-musictype li {
+  margin: 5px 10px;
 }
-#select-type a {
+#select-musictype a {
   font-size: 12px;
   font-weight: 600;
 }
-#select-type li.active {
+#select-musictype li.active {
   position: relative;
 }
-#select-type li.active a::before {
+#select-musictype li.active a::before {
   position: absolute;
   bottom: -5px;
   left: 50%;
