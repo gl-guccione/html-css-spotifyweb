@@ -158,6 +158,7 @@ ELEMENTS
   background-color: #5a5a5a;
   margin: auto 10px;
   border-radius: 2px;
+  cursor: pointer;
 }
 /*
 MAIN
@@ -411,6 +412,7 @@ FOOTER
 }
 #footer .controls-top > i {
   margin: 0 5px;
+  cursor: pointer;
 }
 #footer .controls-top > i:nth-child(3) {
   font-size: 30px;
@@ -432,6 +434,7 @@ FOOTER
 #footer .volume > * {
   font-size: 14px;
   margin: auto 8px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 991px) {
