@@ -152,23 +152,28 @@ ELEMENTS
 }
 
 .progress-bars {
+  position: relative;
+
   width: calc(100% - 20px);
   min-width: 50px;
   height: 4px;
-  background-color: #5a5a5a;
   margin: auto 10px;
-  border-radius: 2px;
+
   cursor: pointer;
-  position: relative;
+
+  border-radius: 2px;
+  background-color: #5a5a5a;
 }
 .progress-bars .progress-bar-gray {
   position: absolute;
-  left: 0;
   top: 0;
+  left: 0;
+
   width: 20%;
   height: 100%;
-  background-color: #c1c1c1;
+
   border-radius: 2px;
+  background-color: #c1c1c1;
 }
 .progress-bars:hover .progress-bar-gray {
   background-color: #adff2f;
@@ -177,10 +182,12 @@ ELEMENTS
   position: absolute;
   top: -3px;
   right: -5px;
+
   width: 10px;
   height: 10px;
-  background-color: #c1c1c1;
+
   border-radius: 50%;
+  background-color: #c1c1c1;
 }
 /*
 MAIN
@@ -415,48 +422,56 @@ FOOTER
 
 /* controls */
 #footer .controls {
-  width: 430px;
-  height: 80px;
   display: flex;
   align-items: center;
   flex-flow: row wrap;
+
+  width: 430px;
+  height: 80px;
 }
 #footer .controls > * {
-  margin-left: auto;
-  margin-right: auto;
   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 #footer .controls-top {
-  font-size: 18px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
 }
 #footer .controls-top > i {
   margin: 0 5px;
+
   cursor: pointer;
 }
 #footer .controls-top > i:nth-child(3) {
-  font-size: 30px;
   margin: 0 10px;
+
+  font-size: 30px;
 }
 #footer .controls-bottom {
   display: flex;
   justify-content: space-between;
+
   width: 100%;
 }
 
 
 /* volume */
 #footer .volume {
-  width: 230px;
   display: flex;
   justify-content: space-between;
+
+  width: 230px;
 }
 #footer .volume > * {
-  font-size: 14px;
   margin: auto 8px;
+
   cursor: pointer;
+
+  font-size: 14px;
 }
 
 @media screen and (max-width: 991px) {
@@ -472,22 +487,25 @@ FOOTER
 
   }
   #footer .controls {
-    height: 35px;
     order: -1;
-    max-width: 100%;
+
     width: 600px;
+    max-width: 100%;
+    height: 35px;
     margin: auto;
   }
   #footer .controls-top {
     font-size: 12px;
   }
   #footer .controls-top > i:nth-child(3) {
-    font-size: 20px;
     margin: 0 5px;
+
+    font-size: 20px;
   }
   #footer .song,
   #footer .volume {
     width: 50%;
+
     font-size: 10px;
   }
 
