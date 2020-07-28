@@ -16,6 +16,9 @@ section {
 a {
   text-decoration: none;
 }
+a:hover {
+  color: #fff !important;
+}
 
 .ls-none li {
   list-style: none;
