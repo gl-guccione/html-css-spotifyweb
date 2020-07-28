@@ -159,6 +159,28 @@ ELEMENTS
   margin: auto 10px;
   border-radius: 2px;
   cursor: pointer;
+  position: relative;
+}
+.progress-bars .progress-bar-gray {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20%;
+  height: 100%;
+  background-color: #c1c1c1;
+  border-radius: 2px;
+}
+.progress-bars:hover .progress-bar-gray {
+  background-color: #adff2f;
+}
+.progress-bars:hover .progress-bar-gray .dot {
+  position: absolute;
+  top: -3px;
+  right: -5px;
+  width: 10px;
+  height: 10px;
+  background-color: #c1c1c1;
+  border-radius: 50%;
 }
 /*
 MAIN
