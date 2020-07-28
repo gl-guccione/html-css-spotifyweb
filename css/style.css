@@ -106,14 +106,26 @@ ELEMENTS
 
   cursor: pointer;
 }
+
+@media screen and (max-width: 991px) {
+  .list-cover li:nth-child(1n+3) {
+    display: none;
+  }
+}
 @media screen and (min-width: 992px) {
   .list-cover li {
     width: calc((100% / 4) - 10px);
+  }
+  .list-cover li:nth-child(1n+5) {
+    display: none;
   }
 }
 @media screen and (min-width: 1200px) {
   .list-cover li {
     width: calc((100% / 6) - 10px);
+  }
+  .list-cover li:nth-child(1n+1) {
+    display: block;
   }
 }
 .list-cover img {
