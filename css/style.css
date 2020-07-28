@@ -213,8 +213,8 @@ main {
   height: 70px;
   padding: 0 15px;
 }
-#left-aside-sm .info span:first-child {
-  font-size: 14px;
+#left-aside-sm .info span:first-child a {
+  font-size: 12px;
 }
 
 #left-aside-sm .info hr {
