@@ -345,14 +345,26 @@ MAIN-CONTENT
   width: calc(100% - 250px);
   height: 70px;
 
+  transition: top 0.9s;
+
   background-color: rgba(0, 0, 0, 0.5);
 }
 #cta-fixed-top + * {
   margin-top: 80px;
+
+  transition: margin-top 0.9s;
 }
 @media screen and (max-width: 767px) {
   #cta-fixed-top {
     width: calc(100% - 60px);
+  }
+}
+@media screen and (max-height: 300px){
+  #cta-fixed-top {
+    top: -100%;
+  }
+  #cta-fixed-top + * {
+    margin-top: 10px;
   }
 }
 
